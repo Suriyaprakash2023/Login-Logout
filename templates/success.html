@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <head name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body{
+            background-color: rgba(35, 235, 235, 0.918);
+            background-image: url("D:\Flask\project\static\matthias.jpg");
+            background-repeat: no-repeat;
+        }
+        .img{
+            height: 350px;
+            width: 250px;
+            font-size: medium;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+        p{
+            font-weight: 700;
+            font-size: 25px;
+        }
+        span{
+            font-size: 25px;
+            
+            font-family: sans-serif;
+            color: rgb(253, 24, 24);
+        }
+        .logout{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20px;
+            margin-right:;
+        }
+        .logout input{
+            background-color: rebeccapurple;
+            height: 40px;
+            width: 80px;
+            border: none;
+            border-radius:20px 20px 20px 20px ;
+            color: whitesmoke;
+            
+        }
+        .logout input:hover{background-color: rgba(252, 26, 26, 0.808);}
+    </style>
+</head>
+<body>
+    <form action="/logout">
+        
+    
+    <div class="img">
+        <p>Welcome <br><span>{{message}}..!</span> </p>
+        
+    </div>
+    <div class="logout">
+        <input type="submit" name="" value="Logout" id="">
+    </div>
+</form>
+</body>
+</html>
